@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Dev - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">VARUN<span>DEV</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <div class="hero-avatar-inner">
+                    <img src="./assets/varrrrr.jpg" alt="Varun Dev">
+                </div>
+            </div>
+            <h1>VARUN DEV</h1>
+            <div class="typing-text" id="typingText"></div>
+            <p>Passionate student with a love for creating innovative web solutions and exploring cutting-edge technologies. Contact me at vs177535@gmail.com</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#" class="btn btn-outline">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('about')">
+            <i class="fas fa-chevron-down" style="font-size: 2rem;"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-inner">
+                        <img src="varrrrr.jpg" alt="Varun Dev">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Hello! I'm Varun Dev</h3>
+                    <p>I'm a dedicated student with a passion for web development and technology. Currently pursuing my Bachelor's in Computer Applications, I've been actively learning and building projects that showcase my growing expertise in full-stack development.</p>
+                    <p>My journey in programming started with curiosity and has evolved into a deep love for creating digital solutions that make a difference. I enjoy working with modern technologies and am always eager to learn new frameworks and tools.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>vs177535@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BCA Student</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-outline">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="90">
+                    <div class="skill-header">
+                        <i class="fab fa-html5"></i>
+                        <span class="skill-name">HTML/CSS</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <div class="skill-percentage">90%</div>
+                </div>
+                <div class="skill-card" data-skill="85">
+                    <div class="skill-header">
+                        <i class="fab fa-js-square"></i>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-card" data-skill="80">
+                    <div class="skill-header">
+                        <i class="fab fa-react"></i>
+                        <span class="skill-name">React</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-card" data-skill="75">
+                    <div class="skill-header">
+                        <i class="fab fa-node-js"></i>
+                        <span class="skill-name">Node.js</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <div class="skill-percentage">75%</div>
+                </div>
+                <div class="skill-card" data-skill="70">
+                    <div class="skill-header">
+                        <i class="fab fa-python"></i>
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <div class="skill-percentage">70%</div>
+                </div>
+                <div class="skill-card" data-skill="85">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <span class="skill-name">MySQL</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-card" data-skill="75">
+                    <div class="skill-header">
+                        <i class="fas fa-leaf"></i>
+                        <span class="skill-name">MongoDB</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <div class="skill-percentage">75%</div>
+                </div>
+                <div class="skill-card" data-skill="80">
+                    <div class="skill-header">
+                        <i class="fab fa-git-alt"></i>
+                        <span class="skill-name">Git/GitHub</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"></div>
+                    </div>
+                    <div class="skill-percentage">80%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop" alt="E-Commerce Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Website</h3>
+                        <p class="project-description">Full-stack e-commerce platform with user authentication, shopping cart, and payment integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">Collaborative task management application with real-time updates and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Material-UI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=200&fit=crop" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">Interactive weather dashboard with location-based forecasts and beautiful data visualizations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">OpenWeather API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=200&fit=crop" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">Responsive portfolio website showcasing projects and skills with smooth animations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">GSAP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing new opportunities, collaborating on interesting projects, or just having a chat about technology. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>vs177535@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-outline">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3 style="color: white; margin-bottom: 1.5rem;">Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Varun Dev. Built with passion and lots of coffee ☕</p>
+        </div>
+    </footer>
+<script src="./assets/script.js"> </script>
+</body>
+</html>
